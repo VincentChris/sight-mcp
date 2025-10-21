@@ -1,12 +1,12 @@
 {
   "name": "sight-mcp",
-  "version": "0.1.0",
+  "version": "1.0.5",
   "description": "Model Context Protocol server exposing Sight CLI complexity analysis",
   "type": "module",
   "main": "dist/server.js",
   "types": "dist/server.d.ts",
   "bin": {
-    "sight-mcp-server": "./dist/server.js"
+    "sight-mcp-server": "dist/server.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
