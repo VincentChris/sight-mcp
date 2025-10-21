@@ -8,7 +8,7 @@ async function main(): Promise<void> {
   const config = loadConfig();
 
   const server = new McpServer({
-    name: 'sight-mcp',
+    name: 'imi-sight-mcp',
     version: '0.1.0'
   });
 
@@ -26,10 +26,10 @@ async function main(): Promise<void> {
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.info('[sight-mcp] Server connected using stdio transport');
+  console.info('[imi-sight-mcp] Server connected using stdio transport');
 }
 
 main().catch(error => {
-  console.error('[sight-mcp] Failed to start server:', error);
+  console.error('[imi-sight-mcp] Failed to start server:', error);
   process.exitCode = 1;
 });

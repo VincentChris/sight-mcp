@@ -1,5 +1,5 @@
 {
-  "name": "sight-mcp",
+  "name": "imi-sight-mcp",
   "version": "1.0.5",
   "description": "Model Context Protocol server exposing Sight CLI complexity analysis",
   "type": "module",

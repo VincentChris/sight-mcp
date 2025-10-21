@@ -136,7 +136,7 @@ async function ensureBinaryExists(binary: string): Promise<void> {
 
 function logCommand(parts: CommandParts): string {
   const commandString = [parts.binary, ...parts.args].join(' ');
-  console.info(`[sight-mcp] Executing: ${commandString} (cwd=${parts.cwd})`);
+  console.info(`[imi-sight-mcp] Executing: ${commandString} (cwd=${parts.cwd})`);
   return commandString;
 }
 
@@ -282,10 +282,10 @@ export async function executeSightComplexity(
       const stderr = Buffer.concat(stderrChunks).toString('utf8').trim();
 
       if (stderr) {
-        console.error('[sight-mcp] sight stderr:', stderr);
+        console.error('[imi-sight-mcp] sight stderr:', stderr);
       }
       if (stdout) {
-        console.info('[sight-mcp] sight stdout:', stdout);
+        console.info('[imi-sight-mcp] sight stdout:', stdout);
       }
 
       if (code !== 0) {
